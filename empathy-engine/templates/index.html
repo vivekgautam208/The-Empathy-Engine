@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Empathy Engine</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#6a11cb,#2575fc);
+margin:0;
+text-align:center;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#1e1e2f;
+color:white;
+padding:15px 30px;
+}
+
+.nav-info{
+font-size:14px;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+background:white;
+width:70%;
+margin:50px auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* INPUT */
+
+textarea{
+width:80%;
+height:120px;
+padding:12px;
+font-size:16px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+/* BUTTON */
+
+button{
+margin-top:15px;
+padding:12px 25px;
+font-size:16px;
+border:none;
+border-radius:6px;
+background:#2575fc;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#6a11cb;
+}
+
+/* RESULT */
+
+.result{
+margin-top:30px;
+padding:20px;
+background:#f4f6f8;
+border-radius:8px;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:40px;
+background:#1e1e2f;
+color:white;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<h2>Empathy Engine</h2>
+
+<div class="nav-info">
+Vivek Gautam | vivekgautam2021@gmail.com
+</div>
+
+</div>
+
+<div class="container">
+
+<h1>AI Emotion Voice Generator</h1>
+
+<p>Enter text and generate voice based on emotion</p>
+
+<form method="POST">
+
+<textarea name="text" placeholder="Enter your text here..."></textarea>
+
+<br>
+
+<button type="submit">Generate Voice</button>
+
+</form>
+
+{% if emotion %}
+
+<div class="result">
+
+<h3>Detected Emotion: {{ emotion }}</h3>
+
+<audio controls>
+<source src="{{ url_for('static', filename='audio/' + audio_file) }}" type="audio/mpeg">
+</audio>
+
+</div>
+
+{% endif %}
+
+</div>
+
+<footer>
+
+<p>Developed by Vivek Gautam</p>
+
+</footer>
+
+</body>
+</html>
