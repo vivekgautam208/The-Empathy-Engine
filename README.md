@@ -15,7 +15,7 @@ Below are some screenshots demonstrating the working of the Empathy Engine web i
 1. Application Interface
 ## Project Screenshot
 
-![Empathy Engine UI](screenshots/interface.png)
+![Empathy Engine UI](empathy-engine/screenshots/interface.png)
 
 
 
