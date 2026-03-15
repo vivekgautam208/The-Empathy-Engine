@@ -12,8 +12,9 @@ Project Screenshots
 
 Below are some screenshots demonstrating the working of the Empathy Engine web interface.
 
-1. Application Interface
 ## Project Screenshot
+1. Application Interface
+
 
 
 ![Empathy Engine UI](empathy-engine/Screenshots/interface.png)
@@ -22,11 +23,11 @@ Below are some screenshots demonstrating the working of the Empathy Engine web i
 
 2. Text Input and Emotion Detection
 
-
+![Empathy Engine UI](empathy-engine/Screenshots/input.png)
 
 
 3. Generated Voice Output
-
+![Empathy Engine UI](empathy-engine/Screenshots/output.png)
 ---
 
 # Technologies Used
